@@ -14,11 +14,11 @@ response = client.chat.completions.create(
     messages=[
         {
             "role": "system",
-            "content": "You are a helpful assistant.",
+            "content": "Think you have typical list of teststeps for system tests of a gui of a testobject. You are the test step specialist. Your task is to recommend me some of your teststeps for a specific use case.",
         },
         {
             "role": "user",
-            "content": "What is the capital of France?",
+            "content": "In this use case I would like first to navigate over a menu to a menuitem, then start a task, then fill in a form of this task, then start this task and after that I would like to compare some fields with expected value. Witch teststeps would you recommend in with phase of the arrange, Act, assert test pattern?",
         }
     ],
     model=model_name,
